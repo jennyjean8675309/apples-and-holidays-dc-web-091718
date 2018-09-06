@@ -69,6 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
           final_holiday_name = split_holiday.join(' ')
         end
         each_holiday_supplies = supplies.to_s
+        binding.pry
       end
       puts "#{stringed_season}:
                   #{final_holiday_name}:
