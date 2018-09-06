@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize!
           final_holiday_name = split_holiday.join(' ')
         end
-        each_holiday_supplies = supplies.to_s
+        each_holiday_supplies = supplies.to_s!
       end
       puts "#{stringed_season}:
                   #{final_holiday_name}:
