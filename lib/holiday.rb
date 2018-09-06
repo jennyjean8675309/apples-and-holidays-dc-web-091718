@@ -67,6 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
           word.caplitalize!
           final_holiday_name = split_holiday.join(' ')
         end
+        
       binding.pry
     end
   end
