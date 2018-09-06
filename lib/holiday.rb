@@ -61,7 +61,6 @@ def all_supplies_in_holidays(holiday_hash)
     stringed_season.capitalize!
     final_holiday_name = ''
     each_holiday_supplies = ''
-    holiday_and_supply_pair = ''
     holiday_hash[season].each do |holiday, supplies|
       stringed_holiday = holiday.to_s
       split_holiday = stringed_holiday.split('_')
@@ -69,15 +68,13 @@ def all_supplies_in_holidays(holiday_hash)
           word.capitalize!
           final_holiday_name = split_holiday.join(' ')
         end
-        final_holiday_name = holiday
         each_holiday_supplies = supplies.to_s
-        holiday_and_supply_pair = "#{holiday}: #{each_holiday_supplies}"
       end
       puts "#{stringed_season}:
-                  #{holiday_and_supply_pair}"
-        
+                  #{final_holiday_name}:
+                  #{each_holiday_supplies}"
     end
-  end
+end
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
