@@ -69,8 +69,8 @@ def all_holidays_with_bbq(holiday_hash)
         check_for_bbq.push(holiday_name)
       end
     end
+    check_for_bbq
   end
-  check_for_bbq
 end
 
 
