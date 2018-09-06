@@ -72,7 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
         binding.pry
       end
       puts "#{stringed_season}:
-                  #{final_holiday_name}:
+                  #{}:
                   #{each_holiday_supplies}"
         
     end
